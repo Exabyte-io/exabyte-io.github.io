@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting to Mat3ra...</title>
+    <script>
+      // Grabs the exact path they were trying to visit (e.g., /wave.js/api)
+      var path = window.location.pathname;
+      var hash = window.location.hash;
+      var search = window.location.search;
+      
+      // Builds the new URL and redirects
+      var newUrl = "https://mat3ra.github.io" + path + search + hash;
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    <p>Exabyte is now Mat3ra. <a href="https://mat3ra.github.io">Click here to go to our new site.</a></p>
+  </body>
+</html>
